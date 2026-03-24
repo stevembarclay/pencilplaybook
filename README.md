@@ -6,6 +6,8 @@ A Claude Code skill that gives Claude structured, opinionated knowledge of the [
 
 Comes with a **setup wizard** that configures the skill for your design system in under a minute — pick a preset (Tailwind, shadcn/ui, Material, Minimal) or walk through 6 questions to configure your own.
 
+<video src="docs/demo.mp4" controls width="100%"></video>
+
 ---
 
 ## What's Inside
@@ -23,6 +25,10 @@ Comes with a **setup wizard** that configures the skill for your design system i
 **4 scaffold archetypes** — ready-to-run `batch_design` scripts for Dashboard, List/Queue, Detail/Review, and Marketing Page layouts.
 
 **4 design system presets** — Tailwind CSS, shadcn/ui, Material Design 3, Minimal/Neutral.
+
+**Onboarding flow** — one question, then Claude builds your first screen in Pencil in under 2 minutes. 8 tool calls max.
+
+**Perceptual Design Defaults** — science-backed lookup tables for typography, color contrast, spacing, motion, and icons. Built into `SKILL.md` so Claude uses them automatically.
 
 **Complete tool reference** for all 12 Pencil MCP tools — every parameter documented.
 
