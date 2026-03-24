@@ -1,7 +1,7 @@
 ---
 name: pencil-pro
 description: "Advanced Pencil.dev workflows for Claude Code. Covers: design token propagation across .pen files, canvas archaeology (batch_get), bulk property replacement, canvas spatial management, and all 12 Pencil MCP tools. Use when: updating existing .pen files, propagating a token change, understanding what's in a .pen file, managing multi-file design system consistency, or scaffolding new app or marketing screens."
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Pencil Pro
@@ -279,6 +279,62 @@ mockups/<feature>-redesign.pen  — full redesign (significant divergence)
 ```
 
 Avoid renaming .pen files after sharing with stakeholders — it breaks handoff doc references.
+
+---
+
+## Perceptual Design Defaults
+
+Quick-lookup tables for building components in Pencil. Science-backed defaults — use them unless your design system specifies otherwise.
+
+### Typography
+| Property | Size Range | Default Value | Rationale |
+|---|---|---|---|
+| Letter spacing | 56px+ (display) | −0.03em | Counters appear open at large sizes |
+| Letter spacing | 32–48px (heading) | −0.015em | Moderate tightening |
+| Letter spacing | 14–18px (body) | 0 (normal) | Typefaces optimized here |
+| Letter spacing | 10–12px (caption) | +0.015em | Counters close up at small sizes |
+| Line height | Body text | 1.5× minimum | WCAG SC 1.4.12 |
+| Line height | Headings | 1.1–1.2× | Tighter for visual density |
+| Line length | Body text | 45–75 chars (65ch optimal) | Baymard Institute |
+| Minimum font size | Any text | 10px | Below 10px is illegible on screen |
+
+### Color
+| Property | Default Value | Rationale |
+|---|---|---|
+| Disabled opacity | 40% | 50% creates ghosts that compete. 40% recedes fully. (MD3, Workday) |
+| Hover lightness delta | 8% minimum | Below 8% is imperceptible on most monitors. (NNGroup) |
+| Dark surface body text | `#E2E8F0` or `#F1F5F9` | Pure white on very dark bg causes halation. Headlines can use white. (APCA) |
+| Non-text contrast | 3:1 minimum | Icons, borders, form controls vs adjacent color. (WCAG 2.2 SC 1.4.11) |
+| Text contrast | 4.5:1 minimum | Body text. Large text (24px+ or 18.66px+ bold): 3:1. (WCAG AA) |
+
+### Motion
+| Property | Default Value | Rationale |
+|---|---|---|
+| Duration floor | 100ms | Below this, motion is imperceptible — snap instead |
+| Duration standard | 200–300ms | Most UI transitions |
+| Duration ceiling | 400ms | Complex choreography only. Never exceed 500ms. |
+| Enter easing | `cubic-bezier(0, 0, 0.2, 1)` | Decelerate — arriving elements settle |
+| Exit easing | `cubic-bezier(0.4, 0, 1, 1)` | Accelerate — departing elements dismiss |
+| Standard easing | `cubic-bezier(0.4, 0, 0.2, 1)` | Within-screen repositioning |
+
+### Spacing
+| Property | Default Value | Rationale |
+|---|---|---|
+| Touch target (mobile) | 44×44px | Apple HIG engineering target |
+| Touch target (desktop min) | 24×24px | WCAG 2.2 SC 2.5.8 floor |
+| Button height (primary) | 40–44px | Comfortable click target |
+| Button height (compact) | 32px | Dense UI, secondary actions |
+| Border radius (cards) | 8px max | >8px reads consumer/casual |
+| Border radius (buttons) | 6px | Matches card inner radius at 8px outer with 2px offset |
+| Focus ring offset | 2px | Ring radius = component radius + 2px (WCAG 2.2 SC 2.4.13) |
+
+### Icons
+| Property | Default Value | Rationale |
+|---|---|---|
+| Minimum size | 16×16px | Below 16px, icons lose clarity at 1x density |
+| Stroke weight | 1.5px (standard), 2px (emphasis) | Match text weight hierarchy |
+| Optical alignment | Shift circle icons down 1px | Circles appear to float relative to square bounds |
+| Touch target padding | Extend to 44×44px with transparent hit area | Icon can be 20px visual, 44px tap target |
 
 ---
 
