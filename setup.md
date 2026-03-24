@@ -223,15 +223,20 @@ Find the "Configure your primary canvas resolution" note and add a line confirmi
 
 ---
 
-### Step 5 — Confirm completion
+### Step 5 — Offer the first screen
 
 Tell the user:
 
 > **pencil-pro is configured.** Your SKILL.md now has real values for all scaffolds and token maps.
 >
-> To start designing, open a `.pen` file and say:
-> `Using pencil-pro, open [your-file.pen] and show me what's in it.`
+> Want to build your first screen right now? I'll open Pencil, scaffold a layout, and show you a screenshot — takes about 60 seconds.
 >
+> Say **yes** to continue, or **no** to start on your own.
+
+If they say yes: read `onboarding.md` and follow it from Step 1.
+
+If they say no:
+> To start designing, say: `build my first screen with pencil-pro`
 > To reconfigure at any time, say: `run the pencil-pro setup wizard`
 
 ---
