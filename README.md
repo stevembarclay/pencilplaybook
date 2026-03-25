@@ -17,15 +17,11 @@ Nine scaffold archetypes. Seven preset design systems. Structured workflows for 
 
 <video src="https://github.com/stevembarclay/pencilplaybook/releases/download/v1.1.0/demo.mp4" controls width="100%"></video>
 
-<!--
-  Screenshots: add before/after comparison images here once available.
-  Suggested format:
+**Before** (raw Claude output) → **After** (with PencilPlaybook)
 
-  **Before** (raw Claude output) → **After** (with PencilPlaybook)
-
-  ![Before: generic AI output](docs/images/before.png)
-  ![After: with PencilPlaybook](docs/images/after.png)
--->
+| Before | After |
+|--------|-------|
+| ![Before: generic AI output](docs/images/before.png) | ![After: with PencilPlaybook](docs/images/after.png) |
 
 ---
 
