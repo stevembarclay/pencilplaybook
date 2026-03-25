@@ -1,6 +1,6 @@
 ---
 name: pencil-pro
-description: "Stop Claude from generating generic AI design slop in Pencil.dev. Embeds science-backed perceptual defaults, 9 scaffold archetypes, and opinionated design systems into Claude Code. Use when: designing in Pencil.dev, propagating a token change, understanding what's in a .pen file, or scaffolding any common app layout."
+description: "PencilPlaybook is the UI Skills / Taste-Skill for Pencil.dev + Claude Code — a design playbook that gives Claude real perceptual psychology and senior-level guardrails so it stops producing averaged-out AI slop."
 version: 1.1.0
 ---
 
