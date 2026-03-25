@@ -6,7 +6,7 @@ A Claude Code skill that gives Claude structured, opinionated knowledge of the [
 
 Comes with a **setup wizard** that configures the skill for your design system in under a minute — pick a preset (Tailwind, shadcn/ui, Material, Minimal) or walk through 6 questions to configure your own.
 
-<video src="docs/demo.mp4" controls width="100%"></video>
+<video src="https://github.com/stevembarclay/pencil-pro/releases/download/v1.1.0/demo.mp4" controls width="100%"></video>
 
 ---
 
